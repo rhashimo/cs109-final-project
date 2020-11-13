@@ -1,0 +1,364 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Initial setting"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<style>\n",
+       "blockquote { background: #AEDE94; }\n",
+       "h1 { \n",
+       "    padding-top: 25px;\n",
+       "    padding-bottom: 25px;\n",
+       "    text-align: left; \n",
+       "    padding-left: 10px;\n",
+       "    background-color: #DDDDDD; \n",
+       "    color: black;\n",
+       "}\n",
+       "h2 { \n",
+       "    padding-top: 10px;\n",
+       "    padding-bottom: 10px;\n",
+       "    text-align: left; \n",
+       "    padding-left: 5px;\n",
+       "    background-color: #EEEEEE; \n",
+       "    color: black;\n",
+       "}\n",
+       "\n",
+       "div.exercise {\n",
+       "\tbackground-color: #ffcccc;\n",
+       "\tborder-color: #E9967A; \t\n",
+       "\tborder-left: 5px solid #800080; \n",
+       "\tpadding: 0.5em;\n",
+       "}\n",
+       "\n",
+       "div.exercise-r {\n",
+       "\tbackground-color: #fce8e8;\n",
+       "\tborder-color: #E9967A; \t\n",
+       "\tborder-left: 5px solid #800080; \n",
+       "\tpadding: 0.5em;\n",
+       "}\n",
+       "\n",
+       "\n",
+       "span.sub-q {\n",
+       "\tfont-weight: bold;\n",
+       "}\n",
+       "div.theme {\n",
+       "\tbackground-color: #DDDDDD;\n",
+       "\tborder-color: #E9967A; \t\n",
+       "\tborder-left: 5px solid #800080; \n",
+       "\tpadding: 0.5em;\n",
+       "\tfont-size: 18pt;\n",
+       "}\n",
+       "div.gc { \n",
+       "\tbackground-color: #AEDE94;\n",
+       "\tborder-color: #E9967A; \t \n",
+       "\tborder-left: 5px solid #800080; \n",
+       "\tpadding: 0.5em;\n",
+       "\tfont-size: 12pt;\n",
+       "}\n",
+       "p.q1 { \n",
+       "    padding-top: 5px;\n",
+       "    padding-bottom: 5px;\n",
+       "    text-align: left; \n",
+       "    padding-left: 5px;\n",
+       "    background-color: #EEEEEE; \n",
+       "    color: black;\n",
+       "}\n",
+       "header {\n",
+       "   padding-top: 35px;\n",
+       "    padding-bottom: 35px;\n",
+       "    text-align: left; \n",
+       "    padding-left: 10px;\n",
+       "    background-color: #DDDDDD; \n",
+       "    color: black;\n",
+       "}\n",
+       "</style>\n",
+       "\n"
+      ],
+      "text/plain": [
+       "<IPython.core.display.HTML object>"
+      ]
+     },
+     "execution_count": 1,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "import requests\n",
+    "from IPython.core.display import HTML, display\n",
+    "styles = requests.get(\"https://raw.githubusercontent.com/Harvard-IACS/2018-CS109A/master/content/styles/cs109.css\").text\n",
+    "HTML(styles)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy as np\n",
+    "import pandas as pd\n",
+    "import matplotlib.pyplot as plt\n",
+    "\n",
+    "from sklearn.model_selection import cross_val_score\n",
+    "from sklearn.utils import resample\n",
+    "from sklearn.tree import DecisionTreeClassifier\n",
+    "from sklearn.ensemble import RandomForestClassifier\n",
+    "from sklearn.ensemble import AdaBoostClassifier\n",
+    "from sklearn.metrics import accuracy_score\n",
+    "\n",
+    "%matplotlib inline\n",
+    "\n",
+    "import seaborn as sns\n",
+    "sns.set(style='whitegrid')\n",
+    "pd.set_option('display.width', 1500)\n",
+    "pd.set_option('display.max_columns', 100)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Import dataset"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Load data\n",
+    "fifa15 = pd.read_csv('data/players_15.csv')\n",
+    "fifa16 = pd.read_csv('data/players_16.csv')\n",
+    "fifa17 = pd.read_csv('data/players_17.csv')\n",
+    "fifa18 = pd.read_csv('data/players_18.csv')\n",
+    "fifa19 = pd.read_csv('data/players_19.csv')\n",
+    "fifa20 = pd.read_csv('data/players_20.csv')\n",
+    "team_league = pd.read_csv('data/teams_and_leagues.csv')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>url</th>\n",
+       "      <th>league_name</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>241</td>\n",
+       "      <td>Spain Primera Division</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>11</td>\n",
+       "      <td>English Premier League</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>5</td>\n",
+       "      <td>English Premier League</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>243</td>\n",
+       "      <td>Spain Primera Division</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>4</th>\n",
+       "      <td>1</td>\n",
+       "      <td>English Premier League</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>5</th>\n",
+       "      <td>9</td>\n",
+       "      <td>English Premier League</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>6</th>\n",
+       "      <td>22</td>\n",
+       "      <td>German 1. Bundesliga</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>7</th>\n",
+       "      <td>21</td>\n",
+       "      <td>German 1. Bundesliga</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>8</th>\n",
+       "      <td>10</td>\n",
+       "      <td>English Premier League</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>9</th>\n",
+       "      <td>73</td>\n",
+       "      <td>French Ligue 1</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "   url              league_name\n",
+       "0  241  Spain Primera Division \n",
+       "1   11  English Premier League \n",
+       "2    5  English Premier League \n",
+       "3  243  Spain Primera Division \n",
+       "4    1  English Premier League \n",
+       "5    9  English Premier League \n",
+       "6   22    German 1. Bundesliga \n",
+       "7   21    German 1. Bundesliga \n",
+       "8   10  English Premier League \n",
+       "9   73          French Ligue 1 "
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "team_league.head(10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "Index(['sofifa_id', 'player_url', 'short_name', 'long_name', 'age', 'dob', 'height_cm', 'weight_kg', 'nationality', 'club',\n",
+       "       ...\n",
+       "       'lwb', 'ldm', 'cdm', 'rdm', 'rwb', 'lb', 'lcb', 'cb', 'rcb', 'rb'], dtype='object', length=104)"
+      ]
+     },
+     "execution_count": 10,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "To do  \n",
+    "- create dummies for player tags\n",
+    "- create dummies for positions\n",
+    "- set a primary position for each player\n",
+    "- create dummies for player traits\n",
+    "- create dummies for preferred foot\n",
+    "- create year variable then merge all years"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "cs109a",
+   "language": "python",
+   "name": "cs109a"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.8"
+  },
+  "toc": {
+   "base_numbering": 1,
+   "nav_menu": {},
+   "number_sections": true,
+   "sideBar": true,
+   "skip_h1_title": false,
+   "title_cell": "Table of Contents",
+   "title_sidebar": "Contents",
+   "toc_cell": false,
+   "toc_position": {},
+   "toc_section_display": true,
+   "toc_window_display": true
+  },
+  "varInspector": {
+   "cols": {
+    "lenName": 16,
+    "lenType": 16,
+    "lenVar": 40
+   },
+   "kernels_config": {
+    "python": {
+     "delete_cmd_postfix": "",
+     "delete_cmd_prefix": "del ",
+     "library": "var_list.py",
+     "varRefreshCmd": "print(var_dic_list())"
+    },
+    "r": {
+     "delete_cmd_postfix": ") ",
+     "delete_cmd_prefix": "rm(",
+     "library": "var_list.r",
+     "varRefreshCmd": "cat(var_dic_list()) "
+    }
+   },
+   "types_to_exclude": [
+    "module",
+    "function",
+    "builtin_function_or_method",
+    "instance",
+    "_Feature"
+   ],
+   "window_display": false
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
