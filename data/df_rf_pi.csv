@@ -1,0 +1,355 @@
+variable,random_forest
+age,1.3731730448454857
+ab_movement_reactions,0.9267627036596965
+ab_mentality_composure,0.6222940757609268
+international_reputation,0.29445459229870397
+ab_skill_ball_control,0.24063738374241606
+ab_attacking_short_passing,0.1314398412028611
+ab_attacking_heading_accuracy,0.12881430792762688
+ab_defending,0.12301900054059053
+ab_power_shot_power,0.09883131538328023
+ab_defending_sliding_tackle,0.09786919262560936
+ab_defending_marking,0.0964175690284101
+ab_passing,0.09327761389103806
+ab_mentality_interceptions,0.08839542115107761
+ab_dribbling,0.08210778950754775
+ab_attacking_crossing,0.08108884769377198
+ab_skill_dribbling,0.07923307192872234
+ab_defending_standing_tackle,0.07446583970635708
+ab_power_jumping,0.07383115146753401
+ab_mentality_aggression,0.07297224247104754
+ab_physic,0.06942358212083555
+ab_attacking_volleys,0.06696369987613018
+ab_goalkeeping_positioning,0.06521901965138799
+ab_power_strength,0.061856667935290766
+ab_shooting,0.06151149165468635
+ab_skill_curve,0.06017440014522144
+ab_mentality_positioning,0.05922669018540372
+ab_movement_sprint_speed,0.05542752795612334
+ab_power_long_shots,0.052007475213703816
+club_Amiens SC,0.05184253062954784
+ab_movement_agility,0.04958642404018061
+ab_goalkeeping_handling,0.049072905607711624
+ab_mentality_penalties,0.04747306106096385
+weight_kg,0.04676127772279752
+ab_attacking_finishing,0.0461992739492727
+ab_mentality_vision,0.04596222451472478
+ab_movement_acceleration,0.044580963554019346
+ab_skill_long_passing,0.044368155462112924
+ab_power_stamina,0.04323695121883979
+ab_movement_balance,0.04296215803268133
+ab_goalkeeping_kicking,0.04277422756691216
+ab_gk_positioning,0.04241259345047652
+ab_pace,0.040601205303904916
+ab_skill_fk_accuracy,0.0368620594089716
+ab_goalkeeping_diving,0.03348868302317794
+height_cm,0.031769886881204634
+ab_goalkeeping_reflexes,0.03109234980418858
+ab_gk_handling,0.02018584839782047
+weak_foot,0.015673995226737958
+club_Chelsea,0.012747287344293135
+d_pos_CM,0.012461497403575984
+ab_gk_kicking,0.011905802300188206
+club_Athletic Club de Bilbao,0.011543991016890586
+club_Atalanta,0.011099052487734084
+work_rate_High/Medium,0.010493306166797289
+club_RCD Espanyol,0.009619611242104753
+ab_gk_diving,0.009256306860706864
+ab_gk_reflexes,0.009001244325283509
+nationality_Spain,0.007352401721625235
+club_Sevilla FC,0.006932503132952661
+club_Leicester City,0.006506287708534053
+d_pos_CAM,0.006364821217978012
+nationality_France,0.006274420082611876
+club_CD Leganés,0.006161484721756238
+nationality_Ivory Coast,0.005792973491371001
+club_RB Leipzig,0.005630241881416786
+nationality_Italy,0.005459476199459879
+skill_moves,0.005327680750360031
+club_Real Sociedad,0.005013425192673182
+work_rate_High/Low,0.0049062811477076805
+d_pos_CF,0.004891465561821917
+ab_gk_speed,0.004879710933929892
+club_Stade de Reims,0.004854389696347638
+club_OGC Nice,0.00451792009179659
+d_foot_left,0.00446415857221929
+d_pos_CDM,0.0043641584291464145
+club_RC Celta,0.004348474499316524
+ab_skill_moves,0.004256192926065871
+nationality_Brazil,0.004147660779236517
+d_trait_Injury_Prone,0.0039240165315444385
+club_Olympique de Marseille,0.003731972375779513
+d_pos_LM,0.0037238460882129234
+club_Olympique Lyonnais,0.003694103620447997
+club_Borussia Mönchengladbach,0.0036777853888398937
+club_Borussia Dortmund,0.0036253164914773705
+club_Bayer 04 Leverkusen,0.0035984844585369657
+club_Angers SCO,0.0035299933199686604
+d_multiple_position,0.0035226795672102184
+club_Manchester City,0.0034242381855611017
+club_CA Osasuna,0.003404500894633955
+club_Tottenham Hotspur,0.003393454955389963
+nationality_Germany,0.0033551871039927406
+club_RC Strasbourg Alsace,0.003255575830106139
+club_Burnley,0.003177604449836657
+d_pos_LB,0.003155329558002329
+club_LOSC Lille,0.003148469981925928
+d_pos_RM,0.003054139944662637
+nationality_Denmark,0.002972624509945021
+nationality_England,0.0029596369086975828
+work_rate_Medium/Medium,0.002808305673639566
+club_Granada CF,0.002807124265647154
+club_Everton,0.002795043218837634
+nationality_Guinea,0.002791645348191274
+nationality_Algeria,0.0027626847260972197
+club_Eintracht Frankfurt,0.002737268959638861
+work_rate_Medium/Low,0.0026158781445518643
+nationality_Slovakia,0.0025866912749396677
+club_TSG 1899 Hoffenheim,0.002526700190321307
+nationality_Morocco,0.002408511173751293
+d_pos_RB,0.002390118895413451
+d_trait_GK_Long_Throw,0.0023839123729155532
+club_Manchester United,0.002304453338305379
+d_trait_Power_Header,0.002287829858730639
+club_Real Valladolid CF,0.0022024268145333535
+club_Getafe CF,0.002185175953023766
+club_Liverpool,0.0021376630331635836
+club_Deportivo Alavés,0.0021144793221553825
+club_FC Schalke 04,0.00210043174203296
+club_Real Madrid,0.002089943804634231
+club_Napoli,0.001994893303980305
+d_trait_Avoids_Using_Weaker_Foot,0.0019736438312497385
+club_Wolverhampton Wanderers,0.0018893486108824576
+nationality_Togo,0.0018864721925323734
+club_Lazio,0.0018697700086722335
+club_Aston Villa,0.0018285866711863718
+club_Roma,0.0018220770365667605
+nationality_Senegal,0.0017590390063956462
+d_pos_LW,0.0017328205826080633
+club_Genoa,0.001725881218781211
+d_trait_Team_Player,0.0016865537623537818
+d_pos_RW,0.0016831804857758924
+club_Fiorentina,0.0016603997474762267
+work_rate_Medium/High,0.0016468694020799646
+club_1. FSV Mainz 05,0.001638777383606005
+club_Villarreal CF,0.0016356772139806352
+club_AS Monaco,0.0016168453036407016
+d_pos_ST,0.0016124189182603389
+nationality_Switzerland,0.001589103514196033
+club_RCD Mallorca,0.001582417992284668
+nationality_Croatia,0.0015789243130537756
+club_Inter,0.001559511082372822
+club_Toulouse Football Club,0.0015587170153384734
+club_Torino,0.0015463892235057842
+club_Stade Rennais FC,0.0014834801346207626
+club_Levante UD,0.001470328574156987
+club_Valencia CF,0.0014673882990068777
+club_FC Bayern München,0.0013544465712458376
+club_Real Betis,0.0013350423997527728
+club_SV Werder Bremen,0.001313549933853686
+club_SPAL,0.0012895159888781649
+club_Nîmes Olympique,0.0012719354408872619
+work_rate_High/High,0.0012214504369765678
+club_Hertha BSC,0.001196573366241438
+club_Arsenal,0.001183727933354284
+club_Paris Saint-Germain,0.001181049422702074
+d_trait_Selfish,0.00117318947379772
+d_trait_Long_Throw-in,0.001140553546097145
+club_Bologna,0.0011318812489559348
+d_pos_CB,0.001130476811760417
+d_trait_Leadership,0.0010989602150125676
+nationality_Paraguay,0.0010778938126998483
+club_Milan,0.001027974053409153
+club_Juventus,0.0010269754298489532
+club_Sheffield United,0.001026580617280537
+club_Stade Brestois 29,0.0010217434025578953
+nationality_Uruguay,0.0010114997021565485
+d_tag_Speedster,0.0009888899556834475
+d_trait_Early_Crosser,0.0009736265119991927
+club_Montpellier HSC,0.0009707160097644163
+club_Sassuolo,0.0009674274424655849
+nationality_Cameroon,0.0009583858173106919
+club_FC Metz,0.000957278278655771
+d_tag_Engine,0.0009547847668661902
+d_trait_Takes_Finesse_Free_Kicks,0.0009518441234048324
+d_trait_Puncher,0.0009484643214841881
+nationality_Czech Republic,0.0009354885073646457
+nationality_Portugal,0.0009334930998370794
+d_trait_Beat_Offside_Trap,0.0009310957196927205
+d_trait_Flair,0.0009300236303044329
+nationality_Scotland,0.0009237749061012934
+nationality_Romania,0.0009137911327396608
+d_pos_RWB,0.0009001431320731612
+d_tag_Acrobat,0.0008966048801109849
+nationality_Netherlands,0.0008910230469979296
+d_trait_Injury_Free,0.0008670439797661799
+work_rate_Low/Medium,0.0008111177781076507
+club_West Ham United,0.0008068308678650382
+club_AS Saint-Étienne,0.0008053041352919621
+d_trait_Cautious_With_Crosses,0.0007921446341052629
+club_Fortuna Düsseldorf,0.0007875181112632745
+nationality_Austria,0.0007595142771375408
+club_Brescia,0.0007571606164294309
+nationality_Argentina,0.0007561271173907258
+d_trait_Comes_For_Crosses,0.0007482391947217337
+d_pos_LWB,0.0007330471867176058
+nationality_Poland,0.0007324421908057488
+nationality_Wales,0.000728692061070646
+nationality_Sweden,0.0007117745801046738
+club_Cagliari,0.0006860521533054609
+club_Hellas Verona,0.0006853070553891171
+nationality_Nigeria,0.0006831923231240822
+d_tag_Strength,0.0006829584607670469
+nationality_Serbia,0.0006827007046993572
+nationality_Norway,0.0006704128192106751
+d_trait_Finesse_Shot,0.0006516790503306779
+nationality_Belgium,0.0005942645849248863
+nationality_Albania,0.0005870996655055194
+club_Norwich City,0.0005845053489620611
+d_trait_Through_Ball,0.0005828469695849491
+club_VfL Wolfsburg,0.0005775987496729584
+nationality_Georgia,0.0005530641446188867
+nationality_Moldova,0.0005522740702353701
+nationality_Northern Ireland,0.0005404835402277542
+club_SD Eibar,0.0005400368666593991
+d_trait_Diver,0.0005351842527675288
+club_FC Girondins de Bordeaux,0.0005330312975580398
+work_rate_Low/High,0.000517874021438125
+club_FC Augsburg,0.0005102456277022327
+d_trait_Power_Free-Kick,0.0005083631094507269
+nationality_Ghana,0.0004988112172542358
+d_trait_Outside_Foot_Shot,0.000494034135655852
+nationality_DR Congo,0.0004919090747851129
+nationality_Finland,0.0004744913457823685
+nationality_Hungary,0.00047443385996484013
+d_trait_Saves_with_Feet,0.00047061540639674603
+club_Newcastle United,0.000461816274176563
+club_Dijon FCO,0.0004598806432152713
+club_Crystal Palace,0.0004499272979327174
+club_Bournemouth,0.0004341500574703616
+club_FC Nantes,0.0004253557195738722
+club_Watford,0.00042521313751233694
+nationality_Republic of Ireland,0.0004228403696972194
+club_Sampdoria,0.0003783531670416451
+club_SC Freiburg,0.0003667070276005546
+nationality_Ukraine,0.0003565256280985807
+club_SC Paderborn 07,0.0003390146514570702
+club_Parma,0.00033722485186462594
+nationality_Tunisia,0.0003214609039449812
+d_tag_Aerial_Threat,0.0003150089871441608
+d_trait_Backs_Into_Player,0.0003123618085940194
+nationality_Egypt,0.00030523036218088606
+nationality_Mali,0.0002942265914649411
+club_Southampton,0.00028145320615706736
+nationality_Gabon,0.0002742775186112212
+d_trait_Target_Forward,0.00027200742973096934
+d_trait_Rushes_Out_Of_Goal,0.0002657915715161607
+nationality_Iceland,0.0002650287527020012
+nationality_Bosnia Herzegovina,0.00025905333112490324
+nationality_Japan,0.0002567103980416263
+d_tag_Tactician,0.00025160205584171533
+nationality_Montenegro,0.000245114444661354
+nationality_Turkey,0.00024318056566823286
+d_tag_Distance_Shooter,0.0002427733038452118
+club_Atlético Madrid,0.00023088980620844524
+club_Lecce,0.00021351229639137158
+club_Brighton & Hove Albion,0.00021227183021093053
+d_trait_One_Club_Player,0.00020595427456395753
+nationality_Venezuela,0.0002014694134818029
+d_trait_Set_Play_Specialist,0.00018480189252638722
+nationality_Slovenia,0.00017625731295556335
+club_1. FC Köln,0.000172504562137199
+nationality_Belarus,0.00016895818273745533
+nationality_Korea Republic,0.00016609710828152657
+d_trait_GK_Up_for_Corners,0.00016108426836716205
+club_Udinese,0.00016050535273439692
+d_tag_Dribbler,0.00015603013859699644
+club_1. FC Union Berlin,0.00014682571372919283
+nationality_Colombia,0.00014578841839441026
+nationality_United States,0.00012023463692365511
+nationality_Greece,0.00011668441112711037
+nationality_Costa Rica,0.00011075705708289974
+nationality_Chile,9.732639919821651e-05
+club_FC Barcelona,9.461558036285566e-05
+nationality_Jamaica,7.23293917245016e-05
+d_tag_Clinical_Finisher,5.41890036853232e-05
+d_tag_Crosser,4.9701183431061224e-05
+nationality_Congo,4.4363033484451365e-05
+d_tag_Playmaker,4.1392730651246265e-05
+nationality_Mexico,4.1367075864329195e-05
+nationality_Kosovo,3.8326138825262035e-05
+nationality_Benin,3.2494310723230055e-05
+d_tag_FK_Specialist,3.1349013001857885e-05
+nationality_Dominican Republic,2.7304753055901188e-05
+d_tag_Tackling,2.6715805060995025e-05
+d_tag_Complete_Defender,2.446060380059123e-05
+nationality_FYR Macedonia,2.3772363999441383e-05
+nationality_Peru,2.3203831006846087e-05
+nationality_Kenya,2.1622505570739747e-05
+nationality_Iran,1.9575269698002275e-05
+nationality_Ecuador,1.2736173034966214e-05
+nationality_Cape Verde,1.094651437725247e-05
+d_trait_1-on-1_Rush,1.0791158282508206e-05
+nationality_Armenia,9.396788768611942e-06
+nationality_Lithuania,8.728168764626787e-06
+nationality_Honduras,7.822016900860262e-06
+d_tag_Poacher,7.749598606565656e-06
+d_trait_Giant_Throw-in,7.573400803373431e-06
+nationality_Russia,7.2285085440881854e-06
+nationality_Gambia,7.003378998504672e-06
+nationality_Burkina Faso,5.61088615143035e-06
+nationality_New Caledonia,5.1906261200329595e-06
+nationality_Australia,4.265813497106308e-06
+nationality_Equatorial Guinea,3.747603930293053e-06
+nationality_New Zealand,3.243980993161699e-06
+nationality_South Africa,2.6362624829801007e-06
+d_tag_Complete_Midfielder,1.4044614902175567e-06
+d_pos_GK,8.385480152028891e-07
+nationality_Burundi,0.0
+nationality_Canada,0.0
+nationality_Afghanistan,0.0
+d_div1_league,0.0
+nationality_Mauritania,0.0
+nationality_Kazakhstan,0.0
+nationality_Macau,0.0
+d_trait_Acrobatic_Clearance,0.0
+nationality_Trinidad & Tobago,0.0
+nationality_Guinea Bissau,0.0
+nationality_Mozambique,0.0
+d_tag_Complete_Forward,0.0
+nationality_Madagascar,0.0
+d_trait_Argues_with_Officials,0.0
+nationality_Haiti,0.0
+nationality_Uganda,0.0
+d_trait_Swerve_Pass,0.0
+d_trait_Flair_Passes,0.0
+nationality_Iraq,0.0
+work_rate_Low/Low,0.0
+nationality_Israel,0.0
+nationality_Zimbabwe,0.0
+nationality_Zambia,0.0
+nationality_Sierra Leone,0.0
+nationality_Estonia,0.0
+nationality_Angola,0.0
+nationality_Bermuda,0.0
+nationality_Latvia,0.0
+nationality_Central African Rep.,0.0
+nationality_Libya,0.0
+nationality_Chad,0.0
+nationality_Bulgaria,0.0
+nationality_Liechtenstein,0.0
+d_trait_Inflexible,0.0
+nationality_Brunei Darussalam,0.0
+nationality_China PR,0.0
+nationality_Uzbekistan,0.0
+nationality_Korea DPR,0.0
+nationality_Comoros,0.0
+d_trait_Second_Wind,0.0
+nationality_Curacao,0.0
+nationality_Palestine,0.0
+nationality_Luxembourg,0.0
+nationality_Azerbaijan,0.0
+nationality_Cyprus,0.0
+nationality_Niger,0.0
+d_trait_Crowd_Favourite,0.0
+d_trait_Skilled_Dribbling,0.0
